@@ -1,0 +1,6 @@
+<h1>👋 Hello world from template!</h1>
+<p>These are your todos:</p>
+{% for todo in todos %}
+<li {% if todo.completed %} style="text-decoration: line-through;color: #2196f3;" {% endif %}>{{ todo.title }}</a>
+</li>
+{% endfor %}
